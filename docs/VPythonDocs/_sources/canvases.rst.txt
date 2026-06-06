@@ -1,5 +1,0 @@
-===================
-Canvases and Events
-===================
-
-You can detect stuff happening.

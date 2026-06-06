@@ -1,12 +1,14 @@
-
-node_modules
-bower_components
 *.pyc
 .DS_Store
-/venv
 __pycache__/
 *~
 /.vscode/
-/ide/.vscode
-/ide/flask_secret.py
 
+# Python virtual environments
+/venv
+/.venv
+
+# Sphinx build output — rebuild with build-docs.sh, deploy with do_build.sh
+/docs/VPythonDocs/
+vpdocs/_build/
+vpdocs/.vs/

@@ -1,8 +1,0 @@
-
-Speed
-=====
-
-Web VPython nodict
-rate()
-other stuff
-

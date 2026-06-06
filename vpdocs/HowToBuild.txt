@@ -1,0 +1,8 @@
+How to bulid vpdocs from Anaconda Promplt:
+
+>cd /d D:\\vpdocs
+
+>sphinx-build -a ./ ./_build/html
+
+
+
