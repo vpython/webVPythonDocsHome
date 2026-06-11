@@ -10,7 +10,7 @@ OUTPUT_DIR="$SCRIPT_DIR/docs/VPythonDocs"
 BUCKET="gs://glow-docs/VPythonDocs"
 
 echo "Building VPython docs..."
-sphinx-build -b html "$SOURCE_DIR" "$OUTPUT_DIR"
+"$SCRIPT_DIR/.venv/bin/sphinx-build" -b html "$SOURCE_DIR" "$OUTPUT_DIR"
 
 echo "Deploying to $BUCKET..."
 gcloud storage rsync -r --delete-unmatched-destination-objects --exclude=".doctrees/.*|\.buildinfo.*" "$OUTPUT_DIR" "$BUCKET"
