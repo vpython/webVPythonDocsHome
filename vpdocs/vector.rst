@@ -4,7 +4,9 @@ Vector Operations
 
 The vector object has the properties of 3D vectors in math and science.
 
-``r = vector(x,y,z)``  or ``r=vec(x,y,z)`` produce the 3D vector < x, y, z >.  
+``r = vector(x,y,z)``  or ``r=vec(x,y,z)`` produce the 3D vector < x, y, z >.
+
+Keyword arguments are also accepted: ``r = vec(x=1, y=2, z=3)``
 
 .. contents::
 
