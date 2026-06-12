@@ -15,6 +15,13 @@ Variables must be converted to a string using standard Python formatting options
 
 ``myspeedtxt.text = f'omega = {vslider.value:.1e} radians/s'``
 
+``hidden`` (boolean)
+   If ``True``, the wtext element is visually hidden — positioned off-screen so it does not appear in the canvas caption or title — but remains accessible to screen readers. Default is ``False``. This attribute is set at creation and cannot be changed afterward::
+
+      sr_only = wtext(text="Speed: 5 radians per second", hidden=True)
+
+   A hidden wtext is useful as an ``aria-live`` announcement region or as an ``aria_labelledby`` / ``aria_describedby`` target when you want the text to be read by a screen reader but not shown on screen.
+
 Accessibility Attributes
 ------------------------
 
